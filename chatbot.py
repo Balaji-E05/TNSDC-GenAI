@@ -12,7 +12,7 @@ from keras.layers import Embedding, LSTM, Dense
 from keras.layers import Dense, Dropout
 from keras.models import Sequential
 
-data_file=open("D:\VS CODE\Flask\chat1\dataset1.json").read()
+data_file=open("dataset1.json").read()
 data=json.loads(data_file)
 
 # Initialize lemmatizer
