@@ -61,7 +61,7 @@ y_train = np.array([output_row for _, output_row in training])
 print("Training data shape:", X_train.shape)
 print("Label data shape:", y_train.shape)
 
-"""
+
 model = Sequential()
 model.add(Dense(128, activation='relu', input_shape=(len(X_train[0]),)))
 model.add(Dropout(0.5))
@@ -70,8 +70,8 @@ model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(len(y_train[0]), activation='softmax'))
 # accuracy = 100%
-"""
 
+'''
 LSTM Model
 model = Sequential()
 model.add(Embedding(input_dim=len(X_train[0]), output_dim=128))
@@ -80,7 +80,7 @@ model.add(LSTM(110))
 model.add(Dense(208, activation = 'relu'))
 model.add(Dense(len(y_train[0]), activation='softmax'))
 # accuracy = 98%
-
+'''
 
 # Compile model
 adam = keras.optimizers.Adam(0.001)
